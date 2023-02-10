@@ -37,7 +37,7 @@ class OrderController extends Controller
         ]);
 
         $transactionDetails = [
-            'order_id' => $order->id.Str::random(5),
+            'order_id' => $order->id.'-'.Str::random(5),
             'gross_amount' => $course['price'],
         ];
 
